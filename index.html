@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Request Information</title>
+    <meta name="description" content="Subscribe to our mailing list.">
+
+    <!--Bootstrap v4 stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+
+    <!--Form stylesheet-->
+    <link rel="stylesheet" href="form.css">
+
+    <!-- Include JS File Here -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="push-md-3 col-md-6">
+                    <h3>Request Information </h3>
+                    <form action="process.php" method="post" name="customerForm" id="customerForm" novalidate>
+                        <div class="form-group">
+                            <label class="sr-only">First Name:</label>
+                            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" required maxlength="30">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only">Last Name:</label>
+                            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" required maxlength="30">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only">Email Address:</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required maxlength="30">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" required minlength="10" maxlength="15">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only">Message</label>
+                            <textarea class="form-control" id="message" name="message" required maxlength="500" placeholder="Request Information Here" rows="3"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="checkbox" id="add_maillist" name="add_maillist" value="Yes" class="form-check-input">&nbsp;&nbsp;&nbsp;Subscribe to Mailing List</label>
+                        </div>
+                        <!-- For success/fail messages -->
+                        <div id="success">
+                            <div class="form-group">
+                                <button type="submit" id="submit" name="submit" class="btn btn-outline-primary">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Bootstrap script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <!--Custom scripts-->
+    <script src="form.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>

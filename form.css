@@ -1,0 +1,34 @@
+
+/************************
+        FORM CSS
+By David Kibuka-Musoke
+*************************/
+section {
+    padding: 50px 0px;
+    margin: 50px 0px;
+    background-color: #b5b5b5;
+}
+
+h3 {
+	text-align: center;
+    color: royalblue;
+    border-bottom: 1px solid #f6f7f6;
+    text-transform: uppercase;
+}
+
+/* Form Subscribe text and checkbox */
+.form-check {
+	text-align: center;
+	color: royalblue;
+}
+
+/* Form Submit button */
+button[type="submit"] {
+	float: right;
+    margin-right: 15px;
+}
+
+/* Form Submission Response Div */
+#success {
+    text-align: center;
+}
